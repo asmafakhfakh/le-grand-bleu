@@ -1,3 +1,4 @@
+
 html,body{
     width: 100%;
     height: 100%;
@@ -17,14 +18,42 @@ html,body{
     text-transform: uppercase;
     color: #424242;
   }
-  
+  /* h1 {
+    color : red;
+  } */
+  .bannerText{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 5em;
+    color: #0f5b72;
+    text-align: center;
+    /* border: 3px solid #ffffff; */
+    position: absolute;
+    top:50%;
+    width:100%;
+    background: #ffffff96;
+  }
   .gallery-wrap {
+    margin-top:3%;
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 70vh;
+    height: 90vh;
   }
-  
+  .item-1 { 
+    background-image: url('./img1.jpg');
+  }
+  .item-2 { 
+    background-image: url('./img2.jpg');
+  }
+  .item-3 { 
+    background-image: url('./img6.jpg');
+  }
+  .item-4 { 
+    background-image: url('./img7.jpg');
+  }
+  .item-5 { 
+    background-image: url('./img10.jpg');
+  }
   .item {
     flex: 1;
     height: 100%;
@@ -36,34 +65,129 @@ html,body{
   .item:hover{
     flex: 7;
   }
-  
-  .item-1 { 
-    background-image: url('https://images.unsplash.com/photo-1499198116522-4a6235013d63?auto=format&fit=crop&w=1233&q=80');
+  img{
+    display: block;
+    width: 32px;
   }
-  
-  .item-2 { 
-    background-image: url('https://images.unsplash.com/photo-1492760864391-753aaae87234?auto=format&fit=crop&w=1336&q=80');
-  }
-  
-  .item-3 { 
-    background-image: url('https://images.unsplash.com/photo-1503631285924-e1544dce8b28?auto=format&fit=crop&w=1234&q=80');
-  }
-  
-  .item-4 { 
-    background-image: url('https://images.unsplash.com/photo-1510425463958-dcced28da480?auto=format&fit=crop&w=1352&q=80');
-  }
-  
-  .item-5 { 
-    background-image: url('https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1234&q=80');
-  }
-  
-  .social{
-    position: absolute;
-    right: 35px;
-    bottom: 0;
-    
-    img{
-      display: block;
-      width: 32px;
-    }
-  }
+
+
+
+
+
+  /* --------------------------------- */
+  /* body { margin:0;padding:0;font-family:Verdana;} */
+
+/* #header {
+  box-sizing:border-box;-moz-box-sizing:border-box;
+  z-index:3;
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#FD62A9;
+  color:#000;
+  text-align:center;
+  -webkit-box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
+  border-bottom:3px solid #000;
+} */
+
+.parallax {
+  position:relative;
+  z-index:1;
+  height:450px;
+}
+
+#trans1 {
+  background: url('./vegetables1.jpg') no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:450px;
+}
+
+#trans2 {
+  background: url('./vegetables2.jpg') no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:450px;
+}
+
+#trans3 {
+  background: url('./vegetables3.jpg') no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:450px;
+}
+
+.txt {
+  font-family: 'Merienda One', cursive;
+  font-size:80px;
+  color:rgb(255, 255, 255);
+  width:auto;
+  padding:5px 10px;
+}
+/* .txt.right {
+  margin: 150px 100px 0 0;
+  float:right;
+  text-align:right;
+}*/
+.txt.left {
+  float:left;
+  text-align:left;
+  margin: 150px 0 0 100px;
+}
+/*
+.txt.sub {
+  font-size:50px;
+  line-height:175%;
+  font-weight:lighter;
+  letter-spacing:1.5px;
+  background:#000;
+  background:rgba(0,0,0,0.60);
+  font-size:25px;
+  color:#ccc;
+  margin: 0 100px 0 100px;
+} */
+.content {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  position:relative;
+  z-index:2;
+  background:#FFF;
+  width:100%;
+
+  margin:0;
+  padding:10px 20px;
+  /* -webkit-box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75); */
+  text-align:left;
+}
+
+.content.right {
+  text-align:right;
+}
+
+.content h2 { padding:0 25px; }
+.content p { padding:0 50px; }
+
+#footer {
+  text-align: center;
+  padding: 20px 0 20px;
+  box-sizing:border-box;-moz-box-sizing:border-box;
+  position:relative;
+  z-index:2;
+  background:#FFF;
+  width:100%;
+  height:auto;
+  margin:0;
+   -webkit-box-shadow: 90px 6px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 90px 6px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 90px 6px 5px rgba(50, 50, 50, 0.75);
+}
